@@ -18,6 +18,8 @@ def testLoadLexicon():
     if not hasattr(getModule(), "Lexicon"):
         raise AssertionError("missing class 'Lexicon' in hangman.py")
 
+    import os
+    raise AssertionError(str(os.listdir()))
     run('Lexicon(4)')
 
 @passed(testLoadLexicon, hide=False)
